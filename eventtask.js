@@ -18,7 +18,7 @@ function yellow(){
 }
 
 function color(cl){
-   document.body.style.backgroundColor = "cl"
+   hover = document.body.style.backgroundColor = "cl"
 
 }
 
