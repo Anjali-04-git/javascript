@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript map and template literal</h1>
+    <div id="box"></div>
+
+    <script>
+        // let arr=[1,2,3,4,5,6,7,8,9,10]
+        // arr.map((e)=>{
+        //     console.log(e)
+        // })
+        // const box=document.querySelector("#box")
+        // const data="welcome to bhopal"
+        // const myimg='travel.jpg'
+        // box.innerHTML=`<h1>this is line1</h1>
+        // <h2>this is heading 2</h2>
+        // <h3>${data}</h3>
+        // <img src="${myimg}" alt="myimg"/>`
+        const box=document.querySelector("#box")
+            console.log(box)
+        const img=['th.jpg','travel.jpg','travel1.webp']
+        const myimg=img.map((e)=>{
+            return`
+            <img src="${e}" alt="img" onclick=alert('hii')>
+            `
+        })
+        box.innerHTML=myimg
+    </script>
+</body>
+</html>

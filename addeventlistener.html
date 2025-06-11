@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is javascript class</h1>
+    <button id="btn">Click me</button>
+    <input type="text" id="inp">
+    <div id="box" style="background-color: red; height:50px; width:50px;">My box</div>
+
+    <script>
+        x=[1,2,3,4,5,6,7,8,9]
+        console.log(x)
+        x.forEach((e,i)=>{
+           console.log(e,i);
+
+        });
+        y=document.getElementById("btn")
+        console.log(y)
+        y.addEventListener('click',()=>{
+            alert("hello")
+        });
+
+        z=document.getElementById("inp")
+        console.log(z)
+        box=document.getElementById("box")
+        console.log(box)
+        box.style.position='relative'
+        pos=10
+        console.log(z)
+        z.addEventListener('keyup',(e)=>{
+            if(e.code==='KeyA'){
+                 //alert("press A")
+                 box.style.left=pos+'px'
+                 pos+=10
+                 if(pos==100){
+                    alert("game over")
+                 }
+
+            }
+            console.log(e.code)
+        })
+        z.addEventListener('keyup',(e)=>{
+            console.log(e.code)
+        })
+    </script>
+</body>
+</html>
