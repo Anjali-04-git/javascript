@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        #inner1{
+            background-color: magenta;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: 100%;
+        }
+
+     </style>
+     <div id="inner1">
+        Enter the element: <input type="text" id="insert_array">
+        <button onclick="handleadd()">Add</button>
+     </div>
+
+     <div id="inner2">
+        
+     </div>
+     <div id="inner3">
+        <input type="text" id="findupdate" placeholder="Find Element">
+        <input type="text" id="update" placeholder="Updated Element">
+        <button onclick="handleupdate()">UPDATE</button>
+        
+     </div>
+     <div id="inner3">
+        <input type="text" id="finddelete" placeholder="FIND DELETED ELEMENT">
+        
+        <button onclick="handledelete()">DELETE</button>
+        
+     </div>
+     <button id="create">ADD</button>
+     <button id="read">READ</button>
+     <button id="update">UPDATE</button>
+     <button id="delete">DELETE</button>
+
+     <script src="crud.js"></script>
+</body>
+</html>

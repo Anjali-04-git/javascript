@@ -30,15 +30,26 @@
 
         const login_user=()=>{
             let user_input_email=document.getElementById('email').value
-            user_name.map((e)=>{
-                if(e===user_input_email){
-                    alert('value match')
-                }
-                else{
-                    alert('value not match')
-                }
-            })
+            let user_input_pass=document.getElementById('password').value
+            let found=false
+            // user_name.map((e)=>{
+            //     if(e===user_input_email){
+            //         alert('value match')
+            //         found=true
+            //     }
+            //     if(!found){
+            //         alert("not found")
+            //     }
+            // })
+            console.log(user_input_email)
+            let ind=user_name.findIndex(e=>e===user_input_email)
+            console.log(user_pass[ind])
+            if(user_input_email===user_name[ind] && user_input_pass===user_pass[ind]){
+                console.log("login")
+            }
         }
+        
+
 
         
     </script>

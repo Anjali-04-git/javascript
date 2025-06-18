@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello welcome to js</h1>
+    <div id="div">
+
+    </div>
+    <script>
+        // let arr=["anjali","shivi","pragati"]
+        // let x=document.getElementById("div")
+        // let y=arr.find((e)=>{return e==="anjali"})
+        // x.innerHTML=y
+        // let mysymbol=Symbol("key3")
+        // let myobj={
+        //     fname:"anjali",
+        //     lname:"nair",
+        //     email: "anjali.shiv8@gmail.com",
+        //     pass: "12345",
+        //     "key":"value",
+        //     [mysymbol]:"value3",
+        // }
+        // console.log(myobj["fname"])
+        // console.log(myobj["key"])
+        // myobj.key2="value2"
+        // Object.freeze(myobj)
+        // myobj.fname="rekha"
+        // console.log(myobj)
+
+        let obj1={
+            "key1": "value1",
+            "key2": "value2",
+            "key3": "value3"
+        }
+        let obj2={
+            "key4": "value4",
+            "key5": "value5",
+            "key6": "value6"
+        }
+        let obj3=Object.assign({},obj1,obj2)
+        console.log(obj3)
+        let obj4={...obj1,...obj2}
+        console.log(obj4)
+    </script>
+</body>
+</html>
